@@ -5,6 +5,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    color:#1E1E1E;
+    margin: 0;
 }
 main{
     display: flex;
@@ -15,6 +17,58 @@ hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
 }
+
+/* header section */
+header{
+    background-color: #562EFF;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    
+}
+.nav_container{
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 20px;
+}
+#left_side{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+}
+
+#left_side img{
+    width: 41px;
+    height: 51px;
+}
+#left_side a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    margin-right: 15px;
+    text-align: center;
+}
+#right_side{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+}
+#right_side a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-right: 15px;
+    text-align: center;
+}
+#right_side img{
+    width: 51px;
+    height: 51px;
+}
 .container{
     background-color: #FFFFFF;
     width: 870px;
@@ -22,6 +76,7 @@ hr{
     margin-top: 21px;
     border-radius: 5px;
 }
+
 .top_players{
     margin-bottom: 30px;
 }
@@ -58,6 +113,7 @@ hr{
 }
 .blog{
     display: flex;
+    align-items: center;
 }
 .blog .thumnail img{
     width: 177px ;
@@ -77,4 +133,49 @@ hr{
     color: #562EFF;
     font-size: 16px;
     text-decoration: none;
+    color: #562EFF;
+}
+
+/* Lates Course */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+
+.course{
+    padding: 16px;
+    width: 237px;
+    box-shadow:0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+
+.course .course_banner img{
+    width: 224px;
+    height: 104px;
+}
+.course_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.course_author{
+    color: #ED6B4F;
+    font-size: 14px;
+}
+.course_duration{
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    border-radius: 20px;
+    padding: 5px 10px;
 }
