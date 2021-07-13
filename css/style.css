@@ -21,7 +21,7 @@ hr{
 /* header section */
 header{
     background-color: #562EFF;
-    
+
 }
 
 .navbar{
@@ -178,4 +178,35 @@ header{
     color: #FF4A60;
     border-radius: 20px;
     padding: 5px 10px;
+}
+
+
+/* ---------------------
+    Media Queries 
+-----------------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
