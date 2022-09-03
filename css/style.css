@@ -180,33 +180,56 @@ header{
     padding: 5px 10px;
 }
 
+/*-------------------------------- Media Queries--------------------------------  */
 
-/* ---------------------
-    Media Queries 
------------------------*/
+/*######### mobile device############  */
 
-/* Mobile Devices */
-@media only screen and (max-width:688px) {
-    .container{
-        width: 100%;
+@media (max-width: 667px) {
+    .container {
+      width: 100%;
+    }
+    .nav_container{
+        align-items: center;
     }
     .players, .blogs, .courses{
         grid-template-columns: repeat(1, 1fr);
     }
-    .player, .blog{
+    .player, .blog, .course{
         flex-direction: column;
     }
-}
-
-/* tablet devices */
-@media only screen and (min-width: 688px) and (max-width:992px) {
-    .container{
-        width: 100%;
+    .course{
+        margin: 5px auto;
     }
+    .section_title{
+        text-align: center;
+    }
+  
+  }
+  
+  
+  /*#################### Tablet or ipad##############  */
+  
+  @media (min-width: 667px) and (max-width:992px){
+    .container {
+      width: 100%;
+    }
+    
     .players, .courses{
         grid-template-columns: repeat(2, 1fr);
     }
     .blogs{
         grid-template-columns: repeat(1, 1fr);
+        margin:5px auto;
+    }
+    .player,.blog{
+        margin: 0px 70px;
+    }
+    .course{
+        margin: 10px auto;
+        justify-items: center;
+        align-content: center;
+    }
+    .section_title{
+        text-align: center;
     }
 }
